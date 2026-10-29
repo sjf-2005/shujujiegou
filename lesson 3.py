@@ -54,11 +54,6 @@ def merge_two_lists(list1: ListNode, list2: ListNode) -> ListNode:
 
 # ----------------------任务3：检测链表是否有环（快慢指针）----------------------
 def has_cycle(head: ListNode) -> bool:
-    """
-    判断单链表是否存在环，快慢指针法
-    :param head: 链表头节点
-    :return: True有环 / False无环
-    """
     slow = head
     fast = head
     while fast is not None and fast.next is not None:
